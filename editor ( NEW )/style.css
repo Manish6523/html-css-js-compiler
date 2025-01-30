@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+::-webkit-scrollbar {
+    display: none;
+}
+a > img{
+    height: 40px;
+    transition: .2s all ease-in-out;
+}
+a > img:hover{
+    border: 1px solid blue;
+    border-radius: 50px;
+    padding: 1px;
+}
+#titleName {
+    color: black;
+    cursor: pointer;
+}
+
+*{
+    /* font-family: "Roboto", sans-serif; */
+    font-family: "Roboto Mono", monospace;
+    
+    /* font-family: "Karla", sans-serif; */
+    box-sizing: border-box;
+    /* scrollbar-width: thin; */
+}
+
+
+body,html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+main{
+    background-color: rgb(31,32,35);
+    height: 100%;
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #3e4045;
+    border-bottom: 1px solid #6f8eff;
+    border-top: 1px solid #6f8eff;
+    /* height: 70px; */
+}
+nav > span > ul > li {
+    color: white;
+}
+.addCbtn{
+    width: 100%;
+    /* height: 100px; */
+    /* border-top: 1px solid #6f8eff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 7px 0;
+    padding: 5px 5px ;
+}
+nav > div > button , .addCbtn > div > button{
+    cursor: pointer;
+    padding: 8px 25px;
+    border-radius: 13px;
+    margin: 0 5px;
+    border: 1px solid #9c9c9c;
+    /* transition: 0.3s background-color ease-in-out; */
+}
+.toggle{
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    width: 130px;
+    height: 35px;
+    color: black;
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+.spanToggle{
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #6d6d6d;
+    width: 50%;
+    height: 100%;
+    /* background-color: red; */
+}
+.codeBtn{
+    border-top-left-radius:10px ;
+    border-bottom-left-radius:10px ;
+    border-right: none;
+}
+.outputBtn{
+    border-top-right-radius:10px ;
+    border-bottom-right-radius:10px ;
+
+}
+.HTML,.CSS,.JS{
+    display: flex;
+    overflow-x: scroll;
+}
+#mb456{
+    background-color: #1f2023;
+    padding: 3px 15px;
+    padding-bottom: 1px;
+    border-radius: 5px ;
+    border: 1px solid #9c9c9c;
+}
+.changer{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 200px;
+    width: 70px;
+    /* background-color: red; */
+    padding: 5px 0;
+}
+.changer > button {
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid #9c9c9c;
+    border-right: 0px;
+    background-color: #ff2121;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.changer > button:hover{
+    transition: 0.2s background-color ease-in-out;
+    cursor: pointer;
+}
+.spanToggle:hover{
+    /* background-color: #3e4045; */
+    transition: 0.2s background-color ease-in-out;
+    cursor: pointer;
+}
+/*---------------------------------------*/
+.to456{
+    background-color: rgb(31,32,35);
+    height: calc(100% - 135px);
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* padding: 0px 10px; */
+}
+.text456{
+    position: relative;
+    width: 40%;
+    margin-right: 15px;
+}
+textarea{
+    font-family: "Roboto Mono", monospace;
+    resize: none;
+    border: 1px solid white;
+    outline: none;
+    position: absolute;
+    width: 100%;
+    height: 98.5%;
+    background-color: #3e4045;
+    font-size: 14px;
+    color: white;
+    border-radius: 5px;
+    margin: 0px;
+    padding:15px;
+    text-wrap: nowrap;
+    overflow-x: scroll;
+}
+.op456{
+    width: 40%;
+    height: 98.5%;
+    color: black;
+    background-color: white;
+    border-radius: 2px;
+    margin: 2px;
+    transition: all 0.5s ease-in-out;
+    /* overflow: scroll; */
+}
+#bx1{
+    background-color: #643030;
+    scale: 1.1;
+}
+.op456{
+    border:1px solid green;
+    box-shadow: 0 0 10px #000;
+    border-radius: 5px;
+}
+
+.CSS,.JS{
+    display: none;
+}
+
+#mb456:hover{
+    background-color: #9c9c9c;
+    cursor: pointer;
+}
+.addCbtn > div > button:hover , button:hover{
+    background-color: #9c9c9c;
+}
+
+.text1456{z-index: 3;}
+.text2456{z-index: 2;display: none;}
+.text3456{z-index: 1;display: none;}
+
+
+
+@media screen and (max-width: 750px) {
+    body {
+      background-color: #1f2023;
+    }
+    #titleName{
+        display: flex;
+    }
+    .toggle{
+        display: flex;
+    }
+    .to456{
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+    }
+    .changer{
+        margin-left: 7px;
+    }
+    .op456{
+        display: none;
+        width: 95%;
+        height: 99%;
+        margin: 0px;
+    }
+    .text456{
+        width: 100%;
+        height: 100%;
+        /* display: none; */
+    }
+    #mb456{
+        display: none;
+    }
+    textarea{
+        font-size: 13px;
+        box-shadow: 0 0 10px #000;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    textarea{
+        font-size: 13px;
+    }
+    #titleName{
+        font-size: 20px;
+        content: "hello";
+    }
+  }
+
+
+
+/* Light Mode Styles */
+body {
+    background-color: #f0f0f0;
+    color: #000000;
+}
+.HTML > button{
+    background-color: #f0f0f0;
+    color: black;
+}
+#titleName > a{
+    color: black;
+    margin-right: 10px;
+}
+#mb456{
+    color: black;
+    background-color: #f0f0f0;
+}
+#mb456 > img{
+    filter: invert(1);
+}
+nav {
+    background-color: #f0f0f0;
+    overflow-x: scroll;
+    text-wrap: nowrap;
+}
+main{
+    background-color: #ffffff;
+}
+
+/* Other elements */
+h2 {
+    color: #000000;
+}
+.to456{
+    background-color: #ffffff;
+}
+
+textarea {
+    background-color: #f0f0f0; /* Background for text areas */
+    color: #000000; /* Text color */
+    border: 1px solid #000000;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+body.dark-mode textarea{
+    box-shadow: 0 0 10px #fff;
+}
+body.dark-mode .toggle{
+    background-color: #121212;
+    border-radius: 12px;
+    color: white;
+    overflow: hidden;
+}
+
+body.dark-mode .op456{
+    box-shadow: 0 0 10px #fff;
+}
+
+body.dark-mode .HTML  > button{
+    background-color: #3e4045;
+    color: white;
+}
+body.dark-mode .CSS  > button{
+    background-color: #3e4045;
+    color: white;
+}
+body.dark-mode .JS  > button{
+    background-color: #3e4045;
+    color: white;
+}
+body.dark-mode #mb456{
+    color: white;
+    background-color: #1f2023;
+}
+body.dark-mode #mb456 > img{
+    filter: invert(0);
+}
+
+
+
+body.dark-mode .to456{
+    background-color: #121212;
+}
+body.dark-mode #titleName{
+    color: white;
+}
+body.dark-mode textarea {
+    background-color: #121212;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+body.dark-mode nav {
+    background-color: #1f1f1f;
+    color: #f0f0f0;
+}
+
+body.dark-mode .text456 {
+    background-color: #1f1f1f; /* Dark background for text areas */
+    color: #ffffff; /* Light text color */
+}
+body.dark-mode main{
+    background-color: #121212;
+}
+body.dark-mode .to456{
+    background-color: #121212;
+}
+/* Switch styles */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 10;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 5px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #5e5e5e;
+}
+
+input:checked + .slider:before {
+    transform: translateX(32px);
+}
+
+@media screen and (max-width: 390px) {
+    #titleName{
+        display: none;
+    }
+    nav{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+    }
+}
+@media screen and (max-width: 300px) {
+    #titleName{
+        display: none;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

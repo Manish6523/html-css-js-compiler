@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML, CSS, Js Compiler -- ManishSharma</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+</head>
+<body>
+    <main>
+        <nav>
+            <h2 id="titleName" style="color:#ffffff; margin: 0; padding: 0;">WEB Compiler-360 &copy;</h2>
+            <div class="toggle">
+                <span class="spanToggle codeBtn" onclick="toggleCode()">Code</span>
+                <span class="spanToggle outputBtn" onclick="toggleOutput()">Output</span>
+            </div>
+            
+            <button id="mb456" onclick="add2()">
+                <img src="./play_arrow.svg" alt="">
+            </button>
+        </nav>
+        <div class="addCbtn">
+            <div class="HTML">
+                <button onclick="addDIV()"><b>Div</b></button>
+                <button onclick="addInput()"><b>Input</b></button>
+                <button onclick="addButton()"><b>Button</b></button>
+                <button onclick="addSpan()"><b>Span</b></button>
+            </div>
+        <div class="CSS">
+            <button onclick="DisplayFlex()"><b>FLEX</b></button>
+            <button onclick="COLOR()"><b>Color</b></button>
+            <button class="bgcc" onclick="BGCOLOR()"><b>BgColor</b></button>
+            <button onclick="Margin()"><b>Height</b></button>
+            <button onclick="Padding()"><b>Width</b></button>
+            <button onclick="Border()"><b>Border</b></button>
+        </div>
+        <div class="JS">
+            <button onclick="addConsole()"><b>console.log</b></button>
+            <button onclick="addAlert()"><b>Alert</b></button>
+            <button onclick="addConfirm()"><b>Confirm</b></button>
+            <button onclick="addFunc()"><b>Function</b></button>
+        </div>
+    </div>
+
+        <div class="to456">
+            <div class="changer">
+                <button id="bx1">HTML</button>
+                <button id="bx2">CSS</button>
+                <button id="bx3">JS</button>
+            </div>
+            <div class="text456">
+                <!--HTML--><textarea onkeydown="add1()" class="text1456" name="" id="text3456" cols="30" rows="10"></textarea>
+                <!--CSS--> <textarea onkeydown="add1()" class="text2456" name="" id="text2456" cols="30" rows="10"></textarea>
+                <!--JS-->  <textarea class="text3456" name="" id="text1456" cols="30" rows="10"></textarea>
+            </div>
+                <iframe class="op456"></iframe>
+        </div>
+    </main>
+    <script id="java456"></script>
+    <script src="script.js"></script>
+</body>
+</html>
